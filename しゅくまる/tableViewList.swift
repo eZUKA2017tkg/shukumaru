@@ -138,6 +138,20 @@ class tableViewList: UIViewController,UITableViewDataSource, UITableViewDelegate
         //Dispose of any resources that can be recreated.
         
     }
+    //画面を自動回転させない
+    override var shouldAutorotate: Bool {
+        get {
+            return false
+        }
+    }
+    
+    //画面の向きを指定
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        get {
+        return .landscape
+        }
+    }
+    
     
 
 }

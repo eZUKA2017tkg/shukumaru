@@ -31,5 +31,19 @@ class TabSecondViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    //画面を自動回転させない
+    override var shouldAutorotate: Bool {
+        get {
+            return false
+        }
+    }
+    
+    //画面の向きを指定
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        get {
+        return .landscape
+        }
+    }
 
 }

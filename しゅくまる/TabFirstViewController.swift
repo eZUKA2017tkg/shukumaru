@@ -308,6 +308,18 @@ class TabFirstViewController: UIViewController, UITableViewDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    //画面を自動回転させない
+    override var shouldAutorotate: Bool {
+        get {
+            return false
+        }
+    }
+    
+    //画面の向きを指定
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        get {
+        return .landscape
+        }
+    }
     
 }
